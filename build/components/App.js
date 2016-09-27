@@ -2,26 +2,24 @@ import React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as actionCreators from '../actions/actionCreators';
-import ScoreBoard from './ScoreBoard';
 
 class App extends React.Component {
-	componentDidMount() {
-		this.props.fetchData();
-		this.intervalRef = setInterval(() => {
-			this.props.fetchData();
-		}, 30000);
+	constructor(props) {
+		super(props);
+		this.props.doAuthentication();
+	}
+	componentWillMount() {
 	}
 	componentWillUnmount() {
-		clearInterval(this.intervalRef);
+
 	}
 	render() {
-		const events = {
-			toggleView: this.props.toggleView,
-			toggleGame: this.props.toggleGame
-		};
+		const { email } = this.props.auth.profile;
 		return (
 			<div className="container">
-				<ScoreBoard {...this.props.gameData} view={this.props.editView} events={events} />
+				{email}
+				<button type="button" onClick={this.props.login}>Login</button>
+				<button type="button" onClick={this.props.logoutUser}>Log out</button>
 			</div>
 		);
 	}
@@ -29,8 +27,7 @@ class App extends React.Component {
 
 function mapStateToProps(state) {
 	return {
-		gameData: state.gameData,
-		editView: state.editView
+		auth: state.auth
 	}
 }
 

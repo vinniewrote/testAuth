@@ -36,6 +36,7 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
+    "auth0-lock": "^10.3.0",
     "xmljson": "^0.2.0"
   }
 }

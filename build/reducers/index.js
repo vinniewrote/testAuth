@@ -1,8 +1,7 @@
 import { combineReducers } from 'redux';
 
-import gameData from './gameData';
-import editView from './editView';
+import auth from './auth';
 
-const rootReducer = combineReducers({ gameData, editView });
+const rootReducer = combineReducers({ auth });
 
 export default rootReducer;
