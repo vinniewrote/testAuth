@@ -1,4 +1,6 @@
-const React = require('react')
+import React from 'react';
+import ReactRouter from 'react-router';
+import { Link } from 'react-router';
 
 class Details extends React.Component {
   render () {
@@ -11,4 +13,4 @@ class Details extends React.Component {
 }
 
 
-module.exports = Details
+export default Details;
