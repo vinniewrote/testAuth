@@ -11,20 +11,26 @@ import Discover from './Discover';
 import Parks from './Parks';
 import Journal from './Journal';
 import Details from './Details';
+import { Provider } from 'react-redux';
+import store, { history } from '../../store';
 
 class App extends React.Component {
 	render(){
 		return (
-			<Router history={hashHistory}>
-				<Route path='/' component={Layout}>
-          <Route path='/discover' component={Discover} />
-          <Route path='/parks' component={Parks}>
-            <Route path='/details/:id' component={Details} />
-          </Route>
-          <Route path='/journal' component={Journal} />
-          <Route path='/profile' component={Profile} />
-        </Route>
-			</Router>
+			<Provider store={store}>
+				<Router history={history}>
+					<Route path='/' component={Layout}>
+	          <Route path='/discover' component={Discover} />
+	          <Route path='/parks' component={Parks}>
+	            <Route path='/details/:id' component={Details} />
+	          </Route>
+	          <Route path='/journal' component={Journal} />
+	          <Route path='/profile' component={Profile} />
+	        </Route>
+				</Router>
+			</Provider>
+
+
 		);
 	}
 }
