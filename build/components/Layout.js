@@ -7,8 +7,8 @@ class Layout extends React.Component {
   render(){
     return(
       <div className='mttLayout'>
-        <div>{props.children}</div>
-        <Navigation/>
+        {React.cloneElement(this.props.children, this.props)}
+        <Navigation />
       </div>
     );
   }

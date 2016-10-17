@@ -17,20 +17,18 @@ import store, { history } from '../../store';
 class App extends React.Component {
 	render(){
 		return (
-			<Provider store={store}>
-				<Router history={history}>
-					<Route path='/' component={Layout}>
-	          <Route path='/discover' component={Discover} />
-	          <Route path='/parks' component={Parks}>
-	            <Route path='/details/:id' component={Details} />
-	          </Route>
-	          <Route path='/journal' component={Journal} />
-	          <Route path='/profile' component={Profile} />
-	        </Route>
-				</Router>
-			</Provider>
+			// <Provider store={store}>
+			// 	<Router history={history}>
+			// 		<Route path='/' component={Layout}>
+	    //       <Route path='/discover' component={Discover} />
+	    //       <Route path='/parks' component={Parks} />
+	    //       <Route path='/journal' component={Journal} />
+	    //       <Route path='/profile' component={Profile} />
+	    //     </Route>
+			// 	</Router>
+			// </Provider>
 
-
+<p>Hola</p>
 		);
 	}
 }
