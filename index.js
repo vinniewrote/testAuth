@@ -18,14 +18,17 @@ import Discover from './build/components/Discover';
 import Parks from './build/components/Parks';
 import Journal from './build/components/Journal';
 import Details from './build/components/Details';
-import Profile from './build/components/Profile';
+import UserProfile from './build/components/UserProfile';
 // render app
 ReactDOM.render(
 	<Provider store={store}>
-			<Router history={history}>
+			<Router history={hashHistory}>
 				<Route path='/' component={Layout}>
 					<IndexRoute component={Discover}></IndexRoute>
+					<Route path='/discover' component={Discover}></Route>
 					<Route path='/parks' component={Parks}></Route>
+					<Route path='/journal' component={Journal}></Route>
+					<Route path='/profile' component={UserProfile}></Route>
 		    </Route>
 			</Router>
 	</Provider>, document.getElementById('app')

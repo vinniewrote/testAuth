@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import ReactRouter from 'react-router';
 import { Router, Route, hashHistory } from 'react-router';
 import { Link } from 'react-router';
-import Profile from './profile';
+import UserProfile from './UserProfile';
 import Layout from './Layout';
 import Navigation from './MttNavigation';
 import Discover from './Discover';
