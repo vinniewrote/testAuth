@@ -2,6 +2,7 @@
   "parks" : [
     {
       "parkName": "Six Flags Great America",
+      "parkId": "SixFlagsGreatAmerica",
       "parkLocation" : {
         "parkCity": "Gurnee",
         "parkState": "Illinois",
@@ -373,6 +374,7 @@
     },
     {
       "parkName": "Cedar Point",
+      "parkId": "CedarPoint",
       "parkLocation" : {
         "parkCity": "Sandusky",
         "parkState": "Ohio",
@@ -422,6 +424,7 @@
     },
     {
       "parkName": "Hollywood Studios",
+      "parkId": "HollywoodStudios",
       "parkLocation" : {
         "parkCity": "Lake Buena Vista",
         "parkState": "Florida",
@@ -471,6 +474,7 @@
     },
     {
       "parkName": "Animal Kingdom",
+      "parkId": "AnimalKingdom",
       "parkLocation" : {
         "parkCity": "Orlando",
         "parkState": "Florida",
@@ -520,6 +524,7 @@
     },
     {
       "parkName": "Magic Kingdom",
+      "parkId": "MagicKingdom",
       "parkLocation" : {
         "parkCity": "Orlando",
         "parkState": "Florida",
@@ -568,7 +573,8 @@
       ]
     },
     {
-      "parkName": "EPCOT",
+      "parkName": "Epcot",
+      "parkId": "Epcot",
       "parkLocation" : {
         "parkCity": "Orlando",
         "parkState": "Florida",

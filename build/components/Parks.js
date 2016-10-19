@@ -8,7 +8,7 @@ class Parks extends React.Component {
     return (
       <div className='bucket'>
         <div className='container'>
-          {data.parks.map((park, i, k) => (
+          {data.parks.map((park, i) => (
           <div key={i}>
           <h3>{park.parkName}</h3>
           <p>{park.parkLocation.parkCity}, {park.parkLocation.parkStateAbbrev} {park.parkLocation.parkCountry}</p>

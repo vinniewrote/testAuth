@@ -26,7 +26,9 @@ ReactDOM.render(
 				<Route path='/' component={Layout}>
 					<IndexRoute component={Discover}></IndexRoute>
 					<Route path='/discover' component={Discover}></Route>
-					<Route path='/parks' component={Parks}></Route>
+					<Route path='/parks' component={Parks}>
+						<Route path='/parks/details/:postID' component={Details}></Route>
+					</Route>
 					<Route path='/journal' component={Journal}></Route>
 					<Route path='/profile' component={UserProfile}></Route>
 		    </Route>
