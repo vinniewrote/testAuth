@@ -1,19 +1,9 @@
 import React from 'react';
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
 import ReactRouter from 'react-router';
 import { Link } from 'react-router';
-import * as actionCreators from '../actions/actionCreators';
 
 class Profile extends React.Component {
-  constructor(props) {
-    super(props);
-    this.props.doAuthentication();
-  }
-  componentWillMount() {}
-  componentWillUnmount() {}
   render(){
-    console.log(this.props);
     const {isAuthenticated, profile} = this.props.auth;
     const {name, picture, picture_large} = profile;
     return (
@@ -25,14 +15,4 @@ class Profile extends React.Component {
   }
 }
 
-function mapStateToProps(state) {
-	return {
-		auth: state.auth
-	}
-}
-
-function mapDispatchToProps(dispatch) {
-	return bindActionCreators(actionCreators, dispatch);
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Profile);
+export default Profile;

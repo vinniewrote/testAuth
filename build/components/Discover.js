@@ -5,6 +5,7 @@ import Navigation from './MttNavigation';
 
 class Discover extends React.Component {
   render(){
+    console.log(this.props);
     return(
       <div className='bucket'>
         <h2>Here is the Discover landing page broseph</h2>
