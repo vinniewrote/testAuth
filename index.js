@@ -22,12 +22,13 @@ import UserProfile from './build/components/UserProfile';
 // render app
 ReactDOM.render(
 	<Provider store={store}>
-			<Router history={hashHistory}>
+			<Router history={history}>
 				<Route path='/' component={Layout}>
 					<IndexRoute component={Discover}></IndexRoute>
 					<Route path='/discover' component={Discover}></Route>
 					<Route path='/parks' component={Parks}>
-						<Route path='/parks/details/:postID' component={Details}></Route>
+						<Route path='/parks/:parkID' component={Details}>
+						</Route>
 					</Route>
 					<Route path='/journal' component={Journal}></Route>
 					<Route path='/profile' component={UserProfile}></Route>

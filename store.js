@@ -6,7 +6,13 @@ import thunkMiddleware from 'redux-thunk';
 
 import rootReducer from './build/reducers/index';
 
-const initialState = {};
+import entries from './build/data/entries';
+import parks from './build/data/parkData';
+
+const initialState = {
+	entries,
+	parks
+};
 
 const enhancers = compose(
 	applyMiddleware(thunkMiddleware),
@@ -16,4 +22,5 @@ const enhancers = compose(
 
 const store = createStore(rootReducer, initialState, enhancers);
 export const history = syncHistoryWithStore(browserHistory, store);
+
 export default store;
