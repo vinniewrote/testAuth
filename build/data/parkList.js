@@ -1,14 +1,11 @@
-{
-  "parks" : [
+const parkList = [
     {
       "parkName": "Six Flags Great America",
       "parkId": "SixFlagsGreatAmerica",
-      "parkLocation" : {
-        "parkCity": "Gurnee",
-        "parkState": "Illinois",
-        "parkStateAbbrev": "IL",
-        "parkCountry": "USA"
-      },
+      "parkCity": "Gurnee",
+      "parkState": "Illinois",
+      "parkStateAbbrev": "IL",
+      "parkCountry": "USA",
       "parkOpenYear": "1976",
       "parkOwner": "Six Flags",
       "parkTheme": "Americas history and culture",
@@ -375,12 +372,10 @@
     {
       "parkName": "Cedar Point",
       "parkId": "CedarPoint",
-      "parkLocation" : {
-        "parkCity": "Sandusky",
-        "parkState": "Ohio",
-        "parkStateAbbrev": "OH",
-        "parkCountry": "USA"
-      },
+      "parkCity": "Sandusky",
+      "parkState": "Ohio",
+      "parkStateAbbrev": "OH",
+      "parkCountry": "USA",
       "parkOpenYear": "",
       "parkOwner": "",
       "parkTheme": "",
@@ -425,12 +420,10 @@
     {
       "parkName": "Hollywood Studios",
       "parkId": "HollywoodStudios",
-      "parkLocation" : {
-        "parkCity": "Lake Buena Vista",
-        "parkState": "Florida",
-        "parkStateAbbrev": "FL",
-        "parkCountry": "USA"
-      },
+      "parkCity": "Lake Buena Vista",
+      "parkState": "Florida",
+      "parkStateAbbrev": "FL",
+      "parkCountry": "USA",
       "parkOpenYear": "",
       "parkOwner": "",
       "parkTheme": "",
@@ -475,12 +468,10 @@
     {
       "parkName": "Animal Kingdom",
       "parkId": "AnimalKingdom",
-      "parkLocation" : {
-        "parkCity": "Orlando",
-        "parkState": "Florida",
-        "parkStateAbbrev": "FL",
-        "parkCountry": "USA"
-      },
+      "parkCity": "Orlando",
+      "parkState": "Florida",
+      "parkStateAbbrev": "FL",
+      "parkCountry": "USA",
       "parkOpenYear": "",
       "parkOwner": "",
       "parkTheme": "",
@@ -525,12 +516,10 @@
     {
       "parkName": "Magic Kingdom",
       "parkId": "MagicKingdom",
-      "parkLocation" : {
-        "parkCity": "Orlando",
-        "parkState": "Florida",
-        "parkStateAbbrev": "FL",
-        "parkCountry": "USA"
-      },
+      "parkCity": "Orlando",
+      "parkState": "Florida",
+      "parkStateAbbrev": "FL",
+      "parkCountry": "USA",
       "parkOpenYear": "",
       "parkOwner": "",
       "parkTheme": "",
@@ -575,12 +564,10 @@
     {
       "parkName": "Epcot",
       "parkId": "Epcot",
-      "parkLocation" : {
-        "parkCity": "Orlando",
-        "parkState": "Florida",
-        "parkStateAbbrev": "FL",
-        "parkCountry": "USA"
-      },
+      "parkCity": "Orlando",
+      "parkState": "Florida",
+      "parkStateAbbrev": "FL",
+      "parkCountry": "USA",
       "parkOpenYear": "",
       "parkOwner": "",
       "parkTheme": "",
@@ -622,5 +609,6 @@
         }
       ]
     }
-  ]
-}
+];
+
+ export default parkList;

@@ -1,6 +1,5 @@
 function parks(state = [], action) {
-  console.log('Parks State:' + state);
-  console.log('Parks Action:' + action);
+  console.log('Parks:' + state, action);
   return state;
 }
 

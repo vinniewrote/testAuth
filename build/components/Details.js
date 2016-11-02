@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactRouter from 'react-router';
 import { Link } from 'react-router';
-import data from '../data/parkData';
 
 class Details extends React.Component {
   render () {

@@ -5,6 +5,7 @@ import Navigation from './MttNavigation';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as actionCreators from '../actions/actionCreators';
+import DiscoverEntry from './DiscoverEntry';
 
 class Layout extends React.Component {
   constructor(props) {
@@ -17,7 +18,7 @@ class Layout extends React.Component {
   render(){
     return(
       <div className='mttLayout'>
-        {React.cloneElement(this.props.children, this.props)}
+          {React.cloneElement(this.props.children, this.props)}
         <Navigation />
       </div>
     );

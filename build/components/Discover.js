@@ -2,13 +2,13 @@ import React from 'react';
 import ReactRouter from 'react-router';
 import { Link } from 'react-router';
 import Navigation from './MttNavigation';
+import DiscoverEntry from './DiscoverEntry';
 
 class Discover extends React.Component {
   render(){
-    console.log(this.props);
     return(
       <div className='bucket'>
-        <h2>Here is the Discover landing page broseph</h2>
+        {this.props.entries.map((entry, i) => <DiscoverEntry {... this.props} key={i} i={i} entry={entry}/>)}
       </div>
     );
   }

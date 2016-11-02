@@ -1,6 +1,6 @@
 function entries(state = [], action) {
-  console.log('Entries State:' + state);
-  console.log('Entries Action:' + action);
+  console.log('The entries will change');
+  console.log('Entries:' + state, action);
   return state;
 }
 
