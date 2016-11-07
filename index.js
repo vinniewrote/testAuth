@@ -15,7 +15,7 @@ import store, { history } from './store';
 import App from './build/components/App';
 import Layout from './build/components/Layout';
 import Discover from './build/components/Discover';
-import Parks from './build/components/Parks';
+import ThemeParks from './build/components/ThemeParks';
 import Journal from './build/components/Journal';
 import Details from './build/components/Details';
 import UserProfile from './build/components/UserProfile';
@@ -26,10 +26,8 @@ ReactDOM.render(
 				<Route path='/' component={Layout}>
 					<IndexRoute component={Discover}></IndexRoute>
 					<Route path='/discover' component={Discover}></Route>
-					<Route path='/parks' component={Parks}>
-						<Route path='/parks/:parkID' component={Details}>
-						</Route>
-					</Route>
+					<Route path='/parks' component={ThemeParks}></Route>
+					<Route path='/parks/:parkId' component={Details}></Route>
 					<Route path='/journal' component={Journal}></Route>
 					<Route path='/profile' component={UserProfile}></Route>
 		    </Route>

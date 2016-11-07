@@ -8,7 +8,7 @@ class Discover extends React.Component {
   render(){
     return(
       <div className='bucket'>
-        {this.props.entries.map((entry, i) => <DiscoverEntry {... this.props} key={i} i={i} entry={entry}/>)}
+        {this.props.entries.map((entry, i) => <DiscoverEntry key={i} i={i} entry={entry}/>)}
       </div>
     );
   }
