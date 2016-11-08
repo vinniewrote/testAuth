@@ -376,10 +376,10 @@ const parkList = [
       "parkState": "Ohio",
       "parkStateAbbrev": "OH",
       "parkCountry": "USA",
-      "parkOpenYear": "",
-      "parkOwner": "",
-      "parkTheme": "",
-      "parkDesigner": "",
+      "parkOpenYear": "1870",
+      "parkOwner": "Cedar Fair Entertainment Company",
+      "parkTheme": "Roller Coaster Capital of the World",
+      "parkDesigner": "unknown",
       "coasters": [
         {
           "coasterName":"",
@@ -424,10 +424,10 @@ const parkList = [
       "parkState": "Florida",
       "parkStateAbbrev": "FL",
       "parkCountry": "USA",
-      "parkOpenYear": "",
-      "parkOwner": "",
-      "parkTheme": "",
-      "parkDesigner": "",
+      "parkOpenYear": "1989",
+      "parkOwner": "The Walt Disney Company",
+      "parkTheme": "Show business",
+      "parkDesigner": "unknown",
       "coasters": [
         {
           "coasterName":"",
@@ -472,10 +472,10 @@ const parkList = [
       "parkState": "Florida",
       "parkStateAbbrev": "FL",
       "parkCountry": "USA",
-      "parkOpenYear": "",
-      "parkOwner": "",
-      "parkTheme": "",
-      "parkDesigner": "",
+      "parkOpenYear": "1998",
+      "parkOwner": "The Walt Disney Company",
+      "parkTheme": "Natural environment and Animal conservation",
+      "parkDesigner": "unknown",
       "coasters": [
             {
               "coasterName":"",
@@ -520,10 +520,10 @@ const parkList = [
       "parkState": "Florida",
       "parkStateAbbrev": "FL",
       "parkCountry": "USA",
-      "parkOpenYear": "",
-      "parkOwner": "",
-      "parkTheme": "",
-      "parkDesigner": "",
+      "parkOpenYear": "1971",
+      "parkOwner": "The Walt Disney Company",
+      "parkTheme": "Fairy tales and Disney characters",
+      "parkDesigner": "unknown",
       "coasters": [
         {
           "coasterName":"",
@@ -568,10 +568,10 @@ const parkList = [
       "parkState": "Florida",
       "parkStateAbbrev": "FL",
       "parkCountry": "USA",
-      "parkOpenYear": "",
-      "parkOwner": "",
-      "parkTheme": "",
-      "parkDesigner": "",
+      "parkOpenYear": "1982",
+      "parkOwner": "The Walt Disney Company",
+      "parkTheme": "Technological innovation and international culture",
+      "parkDesigner": "unknown",
       "coasters": [
         {
           "coasterName":"",

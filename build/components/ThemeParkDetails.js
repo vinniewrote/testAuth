@@ -1,18 +1,33 @@
 import React from 'react';
-import ReactRouter from 'react-router';
 import { Link } from 'react-router';
-import Deets from './Details';
 
-class ThemeParks extends React.Component {
-  render () {
-    const {entry, i, park} = this.props;
+// class ThemeParks extends React.Component {
+//   render () {
+//     const {entry, i, park} = this.props;
+//     console.log()
+//     return (
+//       <div className='bucket'>
+//         <p>{park.parkOpenYear}</p>
+//         <p>{park.parkTheme}</p>
+//         <p>{park.parkDesigner}</p>
+//       </div>
+//     );
+//   }
+// }
+
+// const ThemeParks = ({params}) => {console.log(params)
+// return(
+//   <div>Hello</div>
+// )}
+
+
+const ThemeParks = React.createClass({
+  render() {
+
     return (
-      <div className='bucket'>
-        <p>{park.parkOpenYear}</p>
-        <p>{park.parkTheme}</p>
-        <p>{park.parkDesigner}</p>
-      </div>
-    );
+      <div className='coasters'>{attractions.coasterName}</div>
+    )
   }
-}
+});
+
 export default ThemeParks;
