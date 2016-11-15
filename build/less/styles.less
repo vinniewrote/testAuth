@@ -1,40 +1,16 @@
 // styles
 @import './reset';
 
-.container {
-	width: 95%;
-	max-width: 960px;
-	margin: 0 auto;
+.parkMasthead {
+	border: 1px solid #868585;
+	background: burlywood;
+	margin-bottom: 15px;
 }
 
-.game {
-	margin-top: 10px;
-}
-
-.game__team {
-	text-transform: capitalize;
-}
-
-.game__team--winner {
-	&,
-	& span {
-		font-weight: bold;
+.filterbar {
+	ul {
+		li {
+			display: inline;
+		}
 	}
-}
-
-.game--redzone {
-	border: 1px solid red;
-}
-
-.game__team--pos .game__teamname::after {
-	content: '*'
-}
-
-.game--disabled,
-.scoreboard__button--active {
-	opacity: 0.5;
-}
-
-.scoreboard__title {
-	display: inline-block;
 }
