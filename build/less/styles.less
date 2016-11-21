@@ -2,15 +2,45 @@
 @import './reset';
 
 .parkMasthead {
+	height: 20vh;
 	border: 1px solid #868585;
 	background: burlywood;
-	margin-bottom: 15px;
+}
+.parkFilter {
+	height: 75vh;
+	overflow: auto;
+	.attraction[data-landmarktype="restaurant"] {
+		// display: none;
+	}
+}
+.filterbar {
+	top: 0;
+	button {
+		width: 20%;
+		border: none;
+		background: green;
+		color: white;
+		&:hover {
+			background: blue;
+		}
+	}
 }
 
-.filterbar {
-	ul {
-		li {
-			display: inline;
+nav {
+	height: 5vh;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	a {
+		button{
+			width: 25%;
+			background: blue;
+			height: 100%;
+			border: none;
+			color: white;
+			&:hover {
+				background: red;
+			}
 		}
 	}
 }

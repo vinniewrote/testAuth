@@ -23,10 +23,13 @@ import { Link } from 'react-router';
 
 const ThemeParks = React.createClass({
   render() {
-    const {attractions} = this.props;
+    const {landmarks} = this.props;
     return (
-        <div className='coasters'>
-            {attractions.coasterName}
+        <div className='landmark' data-landmarktype={landmarks.landmarkType}>
+            {landmarks.coasterName}
+            {landmarks.restaurantName}
+            {landmarks.attractionName}
+            {landmarks.shopName}
           <button>+</button>
         </div>
     )
